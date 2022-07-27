@@ -35,13 +35,13 @@ First, write the following lines in your `.rootlogon.C`
 ```
 {
  gInterpreter->AddIncludePath("$LCIO");
- gSystem->Load("${LCIO}/lib/liblcio.so");
- gSystem->Load("${LCIO}/lib/liblcioDict.so");
+ gSystem->Load("liblcio.so");
+ gSystem->Load("liblcioDict.so");
 }
 ```
-and add $LCIO/lib to your LD_LIBRARY_PATH:
+and add $LCIO/lib and/or $LCIO/lib64 to your LD_LIBRARY_PATH:
 ```
-export LD_LIBRARY_PATH=$LCIO/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$LCIO/lib:$LCIO/lib64:$LD_LIBRARY_PATH
 ```
 
 After this, any [LCIO class](https://ilcsoft.desy.de/LCIO/current/doc/doxygen_api/html/classEVENT_1_1LCObject.html) can be used in your ROOT macro.

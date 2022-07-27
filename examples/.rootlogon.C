@@ -3,8 +3,8 @@
 // these three lines are essential, don't touch
  
 gInterpreter->AddIncludePath("$LCIO");
-gSystem->Load("${LCIO}/lib/liblcio.so");
-gSystem->Load("${LCIO}/lib/liblcioDict.so");
+gSystem->Load("liblcio.so");
+gSystem->Load("liblcioDict.so");
 
 // the stuff below you can adjust to your needs
 
