@@ -39,7 +39,7 @@ First, write the following lines in your `.rootlogon.C`
  gSystem->Load("liblcioDict.so");
 }
 ```
-and add $LCIO/lib to your LD_LIBRARY_PATH:
+and add $LCIO/lib and/or $LCIO/lib64 to your LD_LIBRARY_PATH:
 ```
 export LD_LIBRARY_PATH=$LCIO/lib:$LD_LIBRARY_PATH
 ```
