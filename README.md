@@ -35,8 +35,8 @@ First, write the following lines in your `.rootlogon.C`
 ```
 {
  gInterpreter->AddIncludePath("$LCIO");
- gSystem->Load("${LCIO}/lib/liblcio.so");
- gSystem->Load("${LCIO}/lib/liblcioDict.so");
+ gSystem->Load("liblcio.so");
+ gSystem->Load("liblcioDict.so");
 }
 ```
 and add $LCIO/lib to your LD_LIBRARY_PATH:
