@@ -41,7 +41,7 @@ First, write the following lines in your `.rootlogon.C`
 ```
 and add $LCIO/lib and/or $LCIO/lib64 to your LD_LIBRARY_PATH:
 ```
-export LD_LIBRARY_PATH=$LCIO/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=$LCIO/lib:$LCIO/lib64:$LD_LIBRARY_PATH
 ```
 
 After this, any [LCIO class](https://ilcsoft.desy.de/LCIO/current/doc/doxygen_api/html/classEVENT_1_1LCObject.html) can be used in your ROOT macro.
